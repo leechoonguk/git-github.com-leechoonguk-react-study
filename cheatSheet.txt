@@ -1,0 +1,17 @@
+1. npx create-react-app study
+2. prettier 설치
+3. index.js, index.css, App.js 제외 삭제
+4. Dynamic expression {} in jsx
+5. Compote 파라미터는 개발자가 정의해야하는 책임이 있다
+6. 라우팅 필요성 및 설명
+7. npm install react-router-dom  
+8. Pages 생성
+9. Link 설정
+10. Css module 설정(.module.css 생성)
+11. 레이아웃 분리
+12. 웹 연동
+13. Context
+14. useState는 스캐줄러로 관리되므로 인스턴스가 변경되는 것을 바로 인지하지 못한다.
+
+*component는 대문자로
+*fuction은 객채 형식으로 전달
