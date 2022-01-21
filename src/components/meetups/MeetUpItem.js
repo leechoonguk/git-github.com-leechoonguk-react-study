@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../ui/Card";
 import classes from "./MeetupItem.module.css";
+import FacoritesContext from "../../store/favorites-context";
 
 function MeetUpItem(props) {
+  const facoritesCtx = useContext(FacoritesContext);
+  function addFavorites() {
+    facoritesCtx.addFavorite({
+      id: props.id,
+      title: props.title,
+    });
+  }
+
   return (
     <li className={classes.item}>
       <Card>
@@ -18,7 +27,7 @@ function MeetUpItem(props) {
           <p>{props.targetMeetup.description}</p>
         </div>
         <div className={classes.actions}>
-          <button>To Favorites</button>
+          <button onClick={addFavorites}>To Favorites</button>
         </div>
       </Card>
     </li>

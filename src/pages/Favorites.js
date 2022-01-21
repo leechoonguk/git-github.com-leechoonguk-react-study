@@ -1,7 +1,14 @@
 import React from 'react';
+import { useContext } from 'react';
+import MeetupList from '../components/meetups/MeetupList';
+import FacoritesContext from '../store/favorites-context';
 
 function Favorites() {
-  return <div>Favorites</div>;
+  const facoritesCtx = useContext(FacoritesContext);
+  return <section>
+    <div>Favorites</div>
+    <MeetupList meetups={facoritesCtx.favorites}></MeetupList>
+  </section>;
 }
 
 export default Favorites;
