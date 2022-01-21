@@ -4,12 +4,11 @@
   
   body {
     font-family: sans-serif;
-    margin: 0;
+    margin: 3rem;
     background-color: #dfdfdf;
   }
   
-  h1,
-  h2 {
+  h1, h2 {
     color: #333333;
   }
   
